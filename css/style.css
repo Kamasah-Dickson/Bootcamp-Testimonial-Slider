@@ -68,7 +68,7 @@ main .parent-container .left-details::before {
 }
 main .parent-container .left-details p {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.4;
   margin-bottom: 1rem;
   max-width: 770px;
@@ -253,7 +253,7 @@ main .parent-container .right-img .prev {
     margin-bottom: 2.6rem;
     font-size: 1.6rem;
     max-width: 680px;
-    font-weight: 500;
+    font-weight: 300;
     display: block;
     z-index: 99;
     padding: 0;
