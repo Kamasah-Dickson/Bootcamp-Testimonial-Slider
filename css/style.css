@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+html {
+  font-size: 100%;
+}
+
+.myself {
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 0.7rem;
+  padding: 0 0.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  -webkit-animation: smooth4 5s ease;
+          animation: smooth4 5s ease;
+}
+.myself a {
+  font-size: 0.9rem;
+  color: rgb(71, 32, 177);
+  text-decoration: none;
+  border-bottom: 1px dashed rgb(71, 32, 177);
+}
+
+footer {
+  height: 100px;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+main .parent-container {
+  display: -ms-grid;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+main .parent-container .left-details {
+  grid-row: 2/3;
+  text-align: center;
+  position: relative;
+}
+main .parent-container .left-details::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  background-image: url("../images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-size: 3.5rem;
+  height: 100%;
+  width: 10rem;
+  margin: 0 auto;
+}
+main .parent-container .left-details p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  max-width: 770px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  -webkit-animation: smooth2 0.6s ease-in;
+          animation: smooth2 0.6s ease-in;
+}
+main .parent-container .left-details .user-details {
+  display: flex;
+  flex-direction: column;
+  -webkit-animation: smooth 0.7s ease;
+          animation: smooth 0.7s ease;
+}
+main .parent-container .left-details .user-details .username {
+  font-weight: 700;
+}
+main .parent-container .left-details .user-details .user-field {
+  font-weight: 300;
+  color: hsl(240deg, 18%, 77%);
+  margin-top: 0.3rem;
+}
+main .parent-container .right-img {
+  width: 100%;
+  height: 370px;
+  background-image: url("../images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  position: relative;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+  -webkit-animation: smooth3 0.5s ease;
+          animation: smooth3 0.5s ease;
+}
+main .parent-container .right-img .user {
+  margin-top: 2rem;
+  height: auto;
+  margin-inline: auto;
+  max-width: 260px;
+  box-shadow: 0px 15px 15px 0px hsla(240deg, 37%, 20%, 0.219);
+}
+main .parent-container .right-img .buttons {
+  position: absolute;
+  left: 50%;
+  top: 83%;
+  transform: translate(-50%, -100%);
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  border-top-right-radius: 200px;
+  box-shadow: 7px 14px 15px 0px hsla(240deg, 37%, 20%, 0.219);
+  background-color: #fff;
+  display: flex;
+}
+main .parent-container .right-img button {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.6rem 0.8rem;
+  border-color: transparent;
+}
+main .parent-container .right-img button:hover {
+  border: 2px dashed rgb(71, 32, 177);
+  transition: border 0.4s ease-in;
+}
+main .parent-container .right-img button:active {
+  transform: scale(1.1);
+}
+main .parent-container .right-img .next {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+main .parent-container .right-img .prev {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+@-webkit-keyframes smooth {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes smooth {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes smooth2 {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes smooth2 {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes smooth3 {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes smooth3 {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes smooth4 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes smooth4 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  main .parent-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .parent-container .left-details {
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    margin-left: 1rem;
+    align-self: center;
+    width: 60%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding: 0;
+  }
+  main .parent-container .left-details p {
+    text-align: left;
+    line-height: 1.2;
+    margin-bottom: 2.6rem;
+    font-size: 1.6rem;
+    max-width: 680px;
+    font-weight: 500;
+    display: block;
+    z-index: 99;
+    padding: 0;
+    margin-left: 0;
+  }
+  main .parent-container .left-details::before {
+    left: 8rem;
+    padding: 0;
+    top: -1.5rem;
+    background-size: 4rem;
+  }
+  main .parent-container .left-details .user-details {
+    flex-direction: row;
+    width: 100%;
+  }
+  main .parent-container .left-details .user-details .username {
+    font-size: 1.3rem;
+  }
+  main .parent-container .left-details .user-details .user-field {
+    margin: 0;
+    margin-left: 1rem;
+    font-size: 1.3rem;
+  }
+  main .parent-container .right-img {
+    height: 300px;
+    background-position: center;
+    background-size: 30rem;
+    margin-bottom: 0rem;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  main .parent-container .right-img .user {
+    margin-top: 0rem;
+    height: auto;
+    margin-inline: auto;
+    max-width: 330px;
+    box-shadow: 0px 15px 15px 0px hsla(240deg, 37%, 20%, 0.219);
+  }
+  main .parent-container .right-img .buttons {
+    position: absolute;
+    left: 30%;
+    top: 75%;
+    transform: translate(-30%, -70%);
+    background-color: #fff;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    border-top-right-radius: 200px;
+    box-shadow: 7px 14px 15px 0px hsla(240deg, 37%, 20%, 0.219);
+  }
+  main .parent-container .right-img button {
+    padding: 1.1rem 1.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .parent-container .left-details p {
+    font-size: 2.2rem;
+  }
+  main .parent-container .left-details::before {
+    left: 8rem;
+    top: -3.5rem;
+    background-size: 7rem;
+  }
+  main .parent-container .right-img {
+    height: 600px;
+    background-size: 45rem;
+    height: 100%;
+  }
+  main .parent-container .right-img .user {
+    max-width: 530px;
+  }
+  main .parent-container .right-img .buttons {
+    position: absolute;
+    left: 30%;
+    top: 90%;
+    transform: translate(-50%, -100%);
+  }
+}/*# sourceMappingURL=style.css.map */
